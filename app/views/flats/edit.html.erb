@@ -1,0 +1,16 @@
+<h1>Editing Flat</h1>
+
+<%= form_for @flat do |t| %>
+  <%= t.label :name, "Enter a name" %>
+  <%= t.text_field :name %>
+  <%= t.label :address, "Enter address" %>
+  <%= t.text_field :address %>
+  <%= t.label :description, "Enter description" %>
+  <%= t.text_field :description %>
+  <%= t.label :price_per_night, "Price per night" %>
+  <%= t.number_field :price_per_night %>
+  <%= t.label :number_of_guests, "Number of guests" %>
+  <%= t.number_field :number_of_guests %>
+  <%= t.submit %>
+
+<%end%>

@@ -1,0 +1,19 @@
+<h2>Add a new flat</h2>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+      <%= form_for @flat do |f| %>
+        <%= f.text_field :name, placeholder: "Name" %>
+        <%= f.text_field :address, placeholder: "Flat's address" %>
+        <%= f.text_field :description, placeholder: "Flat's description" %>
+        <%= f.number_field :price_per_night, placeholder: "Price per night" %>
+        <%= f.number_field :number_of_guests, placeholder: "Number of guests" %>
+        <%= f.submit "Post flat", class: "btn btn-primary" %>
+      <%end%>
+
+    </div>
+  </div>
+</div>
